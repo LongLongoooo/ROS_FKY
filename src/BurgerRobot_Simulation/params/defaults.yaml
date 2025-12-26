@@ -1,0 +1,23 @@
+burger_localizer:
+  ros__parameters: {}
+
+sensor_bridge:
+  ros__parameters:
+    max_range: 3.5
+    input_scan_topic: /scan
+    output_scan_topic: /scan_filtered
+
+burger_planner:
+  ros__parameters:
+    kp_lin: 0.5
+    kp_ang: 1.5
+    max_lin: 0.22
+    max_ang: 2.84
+    goal_tolerance: 0.10
+
+burger_controller:
+  ros__parameters:
+    publish_rate_hz: 10.0
+    obstacle_min_range: 0.30
+    avoid_turn_speed: 0.5
+    stop_on_obstacle: true
